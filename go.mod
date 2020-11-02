@@ -46,6 +46,8 @@ require (
 	github.com/shirou/gopsutil v2.19.10+incompatible
 	github.com/sirupsen/logrus v1.6.0
 	github.com/soheilhy/cmux v0.1.4
+	github.com/spking11/gorocksdb v0.0.0-20201102110323-c06cf4a71088
+	github.com/tecbot/gorocksdb v0.0.0-20191217155057-f0fad39f321c
 	github.com/tiancaiamao/appdash v0.0.0-20181126055449-889f96f722a2
 	github.com/tikv/pd v1.1.0-beta.0.20200818122340-ef1a4e920b2f
 	github.com/twmb/murmur3 v1.1.3

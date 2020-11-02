@@ -69,6 +69,7 @@ var (
 		"mocktikv": true,
 		"tikv":     true,
 		"unistore": true,
+		"rocksstore": true,
 	}
 	// checkTableBeforeDrop enable to execute `admin check table` before `drop table`.
 	CheckTableBeforeDrop = false

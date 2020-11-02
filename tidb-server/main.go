@@ -70,6 +70,7 @@ import (
 	"go.uber.org/automaxprocs/maxprocs"
 	"go.uber.org/zap"
 	"google.golang.org/grpc/grpclog"
+	"github.com/pingcap/tidb/store/rocksstore"
 )
 
 // Flag Names
@@ -253,6 +254,8 @@ func registerStores() {
 	err = kvstore.Register("mocktikv", mockstore.MockTiKVDriver{})
 	terror.MustNil(err)
 	err = kvstore.Register("unistore", mockstore.EmbedUnistoreDriver{})
+	terror.MustNil(err)
+	err = kvstore.Register("rocksstore", rocksstore.Driver{})
 	terror.MustNil(err)
 }
 
